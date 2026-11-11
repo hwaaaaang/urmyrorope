@@ -33,11 +33,11 @@ gift.addEventListener('click',openGift);
 gift.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openGift()}});
 document.getElementById('receive').addEventListener('click',()=>{
   document.getElementById('result').classList.add('show');
-  document.getElementById('receive').textContent='💖 선물 받기 완료~!!! 💖';
+  document.getElementById('receive').textContent='💖 선물 받기 완료 *^^*!! 💖';
 });
 document.getElementById('again').addEventListener('click',()=>{
   formal.classList.remove('active');cute.style.display='grid';document.body.style.background='#ffe4ef';
   gift.classList.remove('open');document.getElementById('result').classList.remove('show');
-  document.getElementById('receive').textContent='💌 사랑의 빼빼로 받기 💌';
+  document.getElementById('receive').textContent='💌 랜덤 빼빼로 받기 💌';
   opening=false;openButton.disabled=false;window.scrollTo(0,0);
 });
